@@ -1,0 +1,14 @@
+<ion-view view-title="Inventario">
+	<ion-content>
+	  <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="maquinaria in inventario" type="item-text-wrap" href="#/tab/inventario/{{maquinaria.id}}">
+        <img ng-src="{{maquinaria.imagen}}">
+        <h2>{{maquinaria.modelo}}</h2>
+        <p>{{maquinaria.nombre}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <!--<ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>-->
+      </ion-item>
+	</ion-content>
+</ion-view>
